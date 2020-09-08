@@ -1,12 +1,20 @@
-.products {
-  max-width: 1200px;
-  margin: auto;
+:root {
+  --cards-in-line: 4;
+}
 
-  display: flex;
-  flex-wrap: wrap;
+.products {
+  display: grid;
+  grid-template-columns: repeat(var(--cards-in-line), 200px);
+  grid-gap: 48px;
+
   justify-content: center;
+  align-items: center;
+
+  @media (max-width:1049px) {
+    --cards-in-line: auto-fill;
+  }
 
   &__card {
-    margin: 0 24px 50px;
+    margin-bottom: 2px;
   }
 }
