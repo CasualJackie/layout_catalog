@@ -5,16 +5,13 @@
 .products {
   display: grid;
   grid-template-columns: repeat(var(--cards-in-line), 200px);
-  grid-gap: 48px;
+  grid-column-gap: 48px;
+  grid-row-gap: 50px;
 
   justify-content: center;
   align-items: center;
 
   @media (max-width:1049px) {
     --cards-in-line: auto-fill;
-  }
-
-  &__card {
-    margin-bottom: 2px;
   }
 }
