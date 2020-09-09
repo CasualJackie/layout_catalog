@@ -1,6 +1,6 @@
 .card {
   width: 200px;
-  padding: 30px 14px 15px;
+  padding: 17px 14px 15px;
 
   background: #fff;
   border: 1px solid #f3f3f3;
@@ -13,8 +13,9 @@
   &__img {
     display: block;
     width: $card-img-size;
-    height: $card-img-size - 26px;
+    height: $card-img-size - 13px;
     margin: 0 auto 45px;
+    padding-top: 13px;
 
     transition: transform 1s;
 
