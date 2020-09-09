@@ -1,6 +1,6 @@
 .card {
   width: 200px;
-  padding: 17px 14px 15px;
+  padding: 14px 14px 15px;
 
   background: #fff;
   border: 1px solid #f3f3f3;
@@ -14,15 +14,17 @@
     display: block;
     width: $card-img-size;
     height: $card-img-size - 13px;
-    margin: 0 auto 45px;
+    margin: 0 auto 42px;
     padding-top: 13px;
+
+    border: 3px solid transparent;
+    border-radius: 5px;
 
     transition: transform 1s;
 
     &:hover {
       transform: scale(1.25, 1.25);
-      border: 3px solid #f3f3f3;
-      border-radius: 5px;
+      border-color: #f3f3f3;
     }
   }
 
